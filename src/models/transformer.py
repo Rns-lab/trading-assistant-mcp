@@ -2,8 +2,8 @@
 Transformer model for 1-minute price predictions with trading-specific optimizations
 """
 from __future__ import annotations
-import torch # type: ignore
-import torch.nn as nn # type: ignore
+import torch
+import torch.nn as nn
 import numpy as np
 from typing import Dict, Union
 
@@ -170,4 +170,3 @@ class TradingTransformer(nn.Module):
                'volatility': vol_estimate,
                'prediction_minutes_ahead': first_confident_idx + 1
            }
-       
