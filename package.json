@@ -1,13 +1,29 @@
 {
   "dependencies": {
-    "binance-api-node": "^0.12.9"
+    "@binance/connector": "^3.5.0",
+    "bybit-api": "^3.10.27",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.61.0",
+    "technicalindicators": "^3.1.0",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "chai": "^4.x.x",
-    "dotenv": "^16.x.x",
+    "dotenv": "^16.4.7",
     "mocha": "^10.x.x"
   },
   "scripts": {
+    "start": "node scripts/startTrading.js",
     "test": "mocha test/**/*.js --timeout 10000"
-  }
+  },
+  "name": "trading-assistant-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
