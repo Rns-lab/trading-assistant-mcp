@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "binance-api-node": "^0.12.9"
+  },
+  "devDependencies": {
+    "chai": "^4.x.x",
+    "dotenv": "^16.x.x",
+    "mocha": "^10.x.x"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js --timeout 10000"
+  }
+}
